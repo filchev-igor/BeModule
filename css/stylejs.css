@@ -29,7 +29,7 @@ nav {
 width:100%;
 height:80px;
 background-color:inherit; 
-
+ 
  
  }
 
@@ -152,6 +152,32 @@ nav .menu .list a:hover {
    color: black;
 }
 
+@media all and (max-width:414px) {
+   nav .menu {
+      width:78%;
+   }
+
+   nav .menu .burger-menu{
+      width:10%;
+   }
+
+   nav .menu .list{
+      padding:30px 20px;
+   }
+
+   nav .menu .list a{
+      padding:10px 6px;
+      font-size:9px;
+   }
+
+   nav .logo{
+      width:20%;
+   }
+}
+
+
+
+
 
 /* landing page */
 .landing {
@@ -224,6 +250,25 @@ nav .menu .list a:hover {
    border: none;
 }
 
+@media all and (max-width:414px)
+{
+   .landing {
+      height:450px;
+   }
+
+   .landing .text h1 {
+      font-size:80px;
+      margin:30px 0px;
+   }
+}
+
+
+
+
+
+
+
+
 /* notebook */
 .notebook {
    width:100%;
@@ -290,6 +335,8 @@ margin:20px 0px;
    height:10%;
    /* background-color: #4b379a; */
    text-align: center;
+ 
+   
 }
 
 .notebook .content .image ul li {
@@ -327,6 +374,25 @@ margin:20px 0px;
 
 }
 
+
+@media all and (max-width:414px) {
+   .notebook .content .text {
+      margin-bottom:20px;
+   }
+
+   .notebook .content .image ul {
+      padding:0px 20px;
+   }
+
+}
+
+
+
+
+
+
+
+
 /* Scroll */
 
 .scroll {
@@ -352,7 +418,7 @@ margin:20px 0px;
 .scroll .text {
    position:absolute;
    width:50%;
-   height:65%;
+   height:69%;
    /* background-color: #3224b0; */
    top:50%;
    left:100%;
@@ -403,6 +469,12 @@ margin:20px 0px;
    }
 }
 
+@media all and (max-width:414px) {
+   .scroll .text p {
+      width:300px;
+      
+   }
+}
 
 
 /* portfolio */
@@ -485,7 +557,11 @@ margin:20px 0px;
    }
 }
 
-
+@media all and (max-width:414px) {
+   .portfolio .folder .file .text {
+      padding-top:120px;
+   }
+}
 
 
 
@@ -599,6 +675,26 @@ margin:20px 0px;
    }
 }
 
+@media all and (max-width:414px){
+   .message .text p {
+      width:300px;
+      margin-left:0px;
+   }
+
+   .message .text form  {
+      height:90%;
+   }
+
+   .message .text form .name,
+.message .text form input[type="email"] {
+   width:90%;
+   padding:10px 8px;
+   margin:10px 0px;
+}
+}
+
+
+
 
 /* subscribe */
 
@@ -677,6 +773,19 @@ margin:20px 0px;
    }
 }
 
+@media all and (max-width:414px) {
+   .subscribe .text {
+      width:80%;
+      height:80%;
+   }
+
+   .subscribe .text form {
+   margin:4px 0px;
+   }
+}
+
+
+
 
 /* footer  */
 
@@ -744,4 +853,12 @@ footer .text p a{
    footer .text {
       width:80%;
    }
+}
+
+@media all and (max-width:414px) {
+   footer .text {
+      width:100%;
+      height:90%;
+   }
+
 }
