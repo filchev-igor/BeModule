@@ -267,6 +267,13 @@ nav .menu .list a:hover {
  
 }
  
+@media (max-width:414px) {
+   .landing {
+       background-size: cover;
+       background-position: center center !important;
+   }
+}
+
 
 
 
