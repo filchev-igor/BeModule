@@ -4,6 +4,17 @@
    --main-color:#4b379a;
    --left-color:#3224b0;
    --right-color:#be5ede;
+   --left-Rcolor:#C0392B;
+   --right-Bcolor:#FADBD8;
+   --left-BColor:#1A120B;
+   --right-BrColor:#3C2A21;
+   --left-GColor:#A4BE7B;
+   --right-BaColor:#E5D9B6;
+
+   --left-scroll-color:#3224b0af;
+   /* --left-scroll-color:#fdedec96; */
+   --right-scroll-color:#be5edeaf;
+
  }
 
  /* End general rules */
@@ -14,12 +25,77 @@
    margin: 0;
  }
 
+ .purple {
+   background:linear-gradient(to right,var(--left-color),var(--right-color));
+ }
+
+ .red {
+   background:linear-gradient(to right,var(--left-Rcolor),var(--right-Bcolor));
+ }
+
+ .black {
+   background:linear-gradient(to right,var(--left-BColor),var(--right-BrColor));
+ }
+
+.green {
+   background:linear-gradient(to right,var(--left-GColor),var(--right-BaColor));
+}
+
  .container-all {
    width:90%;
    height:90%;
    margin:5% auto;
    background-color: aqua;
  }
+
+
+.colors {
+   width:20%;
+   height:40px;
+   /* background-color: red; */
+   margin: auto;
+   text-align: center;
+   padding:5px 0px;
+}
+
+.colors span {
+   display: inline-block;
+   width:30px;
+   /* height:30px; */
+   height:10px;
+   background-color: #3224b0;
+   border-radius:10px;
+   cursor: pointer;
+}
+
+.colors span#purple {
+   background:linear-gradient(to right,var(--left-color),var(--right-color));
+}
+
+.colors span#red {
+   background:linear-gradient(to right,var(--left-Rcolor),var(--right-Bcolor));
+}
+
+.colors span#black {
+   background:linear-gradient(to right,var(--left-BColor),var(--right-BrColor));
+}
+
+.colors span#green {
+   background:linear-gradient(to right,var(--left-GColor),var(--right-BaColor));
+}
+
+
+@media all and (max-width:414px) {
+   .colors {
+      width:50%;
+   }
+}
+
+
+
+
+
+
 
 
 
@@ -524,7 +600,7 @@ margin:20px 0px;
    position: absolute;
    width:100%;
    height:100%;
-   background:linear-gradient(to right,#3224b0af,#be5edeaf);
+   background:linear-gradient(to right,var(--left-scroll-color),var(--right-scroll-color));
    top:-100%;
    left:0;
    /* opacity:0.5; */
@@ -768,6 +844,7 @@ margin:20px 0px;
       display: block;
       margin-top:15px;
       right:25%;
+      
  
 
    }

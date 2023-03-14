@@ -19,8 +19,14 @@
 
 </head>
 <body class="body">
+    <div class="colors">
+        <span id="purple" onclick="changeColor('purple')"></span>
+        <span id="red" onclick="changeColor('red')"></span>
+        <span id="black" onclick="changeColor('black')"></span>
+        <span id="green" onclick="changeColor('green')"></span>
+    </div>
     <div class="container-all">
-        <section class="landing">
+        <section class="landing" id="landing">
         <nav>
             <div class="content">
             <div class="logo">
@@ -60,14 +66,14 @@
             <p>
                 Here, I focus on a range of items and features that we use in life without giving them a second thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
             </p>
-            <button>get started<span><i class="fas fa-arrow-right"></i></span></button>
+            <button id="getButton">get started<span><i class="fas fa-arrow-right"></i></span></button>
             </div>
             <div class="image">
                 <img src="https://preview.colorlib.com/theme/pemodule/img/slider.jpg.webp" alt="..."/>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
                 </ul>
             </div>
         </div>
@@ -78,7 +84,7 @@
         <div class="text">
             <h2>Reasons To <span>Choose</span> Notebook</h2>
             <p>Here, I focus on a range of items and features that we use in life without giving them a second thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-            <a href="#">get started <span><i class="fas fa-arrow-right"></i></span></a>
+            <a href="#" id="scrollbutton">get started <span><i class="fas fa-arrow-right"></i></span></a>
         </div>
     </section>
  
@@ -90,7 +96,7 @@
                 <div class="image">
                     <img src="https://preview.colorlib.com/theme/pemodule/img/s1.jpg.webp" alt="..."/>
                 </div>
-                <div class="text"> 
+                <div class="text portScroll"> 
                 <h4>Becoming A Dvd Repair Expert Online</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                  </div>
@@ -100,7 +106,7 @@
                 <div class="image">
                     <img src="https://preview.colorlib.com/theme/pemodule/img/s2.jpg.webp" alt="..."/>
                 </div>
-                <div class="text"> 
+                <div class="text portScroll"> 
                 <h4>Becoming A Dvd Repair Expert Online</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                  </div>
@@ -110,7 +116,7 @@
                 <div class="image">
                     <img src="https://www.techrepublic.com/wp-content/uploads/2020/04/ca-9.jpg" alt="..."/>
                 </div>
-                <div class="text"> 
+                <div class="text portScroll"> 
                 <h4>Becoming A Dvd Repair Expert Online</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                  </div> 
@@ -120,7 +126,7 @@
                 <div class="image">
                     <img src="https://wallpapers.com/images/featured/bgt6dccypy1dfk0c.jpg" alt="..."/>
                 </div>
-                <div class="text"> 
+                <div class="text portScroll"> 
                 <h4>Becoming A Dvd Repair Expert Online</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                  </div>
@@ -130,7 +136,7 @@
     </section>
 
 
-<section class="message">
+<section class="message" id="mess">
     <div class="text">
         <h2>Send Us <span>Message</span></h2>
         <p>Most people who work in an office environment, buy computer products. </p>
@@ -147,19 +153,19 @@
 </section>
 
 
-<section class="subscribe">
+<section class="subscribe" >
 <div class="text">
     <h3>Subscribe for our <span>Newsletter</span></h3>
     <form>
         <input type="email" placeholder="Your Email Address" id="mail"/>
-        <a href="#" onclick="checkEmail()">get started <span><i class="fas fa-arrow-right"></i></span></a>
+        <a href="#" onclick="checkEmail()" id="subscribeForm">get started <span><i class="fas fa-arrow-right"></i></span></a>
     </form>
     <p>We won’t send any types of spam, Guranteed</p>
 </div>
 </section>
 
 
-<footer>
+<footer id="footer">
    <div class="text">
     <div class="list">
         <a href="#">Home</a>
